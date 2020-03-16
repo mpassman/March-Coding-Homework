@@ -1,0 +1,21 @@
+$font-family-sans-serif:
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+  
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; // allow us to do the line break for collapsing content
+    align-items: center;
+    justify-content: space-between; // space out brand from logo
+    padding: $navbar-padding-y $navbar-padding-x;
