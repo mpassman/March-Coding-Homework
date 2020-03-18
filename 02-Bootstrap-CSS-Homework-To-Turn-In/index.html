@@ -2,37 +2,144 @@
 <html lang="en-us">
 
 <head>
+  
+  <!--Create the following files files: index.html, portfolio.html and contact.html.
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+Using Bootstrap, develop your portfolio site with the following items:
+A navbar
+A responsive layout
+Responsive images
 
-  <title>Bootstrap 101 Template</title>
+The Bootstrap portfolio should minimize the use of media queries.
 
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+Screenshots are provided as a reference in the Assets/Images folder. Your app does not need to be exactly like the images. Use Bootstrap to create a similar, responsive layout.
+
+Hints
+Use Bootstrap's grid system (containers, rows, and columns).
+
+On an xs screen, content should take up the entire screen. On sm and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
+
+Use an HTML validation service to ensure that each page has valid HTML.
+
+Minimum Requirements
+Functional, deployed application
+GitHub repository with README describing the project
+Navbar must be consistent on each page.
+Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
+All links must work.
+Must use semantic html.
+Each page must have valid and correct HTML. (use a validation service)
+Must contain your personalized information. (bio, name, images, links to social media, etc.)
+
+Must properly utilize Bootstrap components and grid system.
+
+Bonus
+Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (Hint: Check out the Bootstrap documentation).
+Commit Early and Often
+One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+
+Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+
+Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+
+Follow these guidelines for committing:
+
+Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+
+Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+
+Don't commit half-done work, for the sake of your collaborators (and your future self!).
+
+Test your application before you commit to ensure functionality at every step in the development process.
+We would like you to have well over 200 commits by graduation, so commit early and often!
+
+Submission on BCS
+You are required to submit the following:
+The URLs of the deployed applications
+The URLs of the GitHub repositories-->
+<!-- Bootstrap CDN -->
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bgdark" >
-        <span class="navbar-brand mb-1 h1">Navbar</span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+  <!-- Navbar -->
+  
+    <div id="top_pane">
+      <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+          <div class="navbar-header">
+            <div class="mx-auto" style="width: 200px;">
+            <a class="navbar-brand">Michael Passman</a>
+
+            <!-- Create a hamburger icon -->
+            <button id="hamburger_menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation_menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> 
+            </div>
+          </div>
+        </div>
+
+                  
+          <div id="navigation_menu" class="navbar-default">
+            <div style="text-align:center">
+              <ul class="nav navbar-nav navbar-center">
+                <li class="active"><a href="#">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </nav>
+    </div>
+    
+    <!-- Middle pane -->
+    <div id="middle_pane" class="container">
+      <div class="row">
+          <!-- Left pane -->
+          <div class="left_pane col-xs-12 col-md-7">
+              <h1>About Me</h1>
+              <hr>
+
+              <div class="row">
+                  <!-- Profile photo -->
+                  <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0">
+                      <img class="img-responsive" src="#" alt="There are honestly no good photos of me in the past three years. I'm always the one behind the camera!">
+                  </div>
+
+                  <!-- Profile content -->
+                  <div class="col-xs-12 col-sm-8 col-md-12 col-lg-8">
+                      <p>
+                          Hello, my name is Michael. I'm currently taking class for certification in Coding and Web Development.
+                      </p>
+                      <p>
+                          I'm a multi-faceted creative type who thinks analytically, but is primarily right brained and thus, a conceptual thinker who sees "the big picture."
+                      </p>
+                      <p>
+                          I have a professional background in social media, fraud analysis, and fact checking. I'm also an accomplished concert photographer. I recently started shooting color infrared landscape photography.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+
+     
 </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
 </html>
